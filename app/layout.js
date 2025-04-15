@@ -37,11 +37,11 @@ export default function RootLayout({ children }) {
             <main className="min-h-screen">
               {children}
             </main>
-            <footer className="font-mono text-sm p-4 bg-muted/30">
-              <div className="container mx-auto">
+            <footer className="font-mono text-sm p-4">
+              <div className="container mx-auto text-center">
                 <p>
+                  &copy; {new Date().getFullYear()} Shaheen •
                   Made with <LucideCode2 className="inline" /> by <a href="https://sharoon.vercel.app" target="_blank" rel="noreferrer" className="underline-offset-4 underline ">Sharoon</a>
-
                 </p>
               </div>
             </footer>

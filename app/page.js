@@ -1,14 +1,20 @@
-import { Button } from "@/components/ui/button";
-
+import HeroSection from "@/components/sections/hero";
+import Features from "@/components/sections/features";
+import HowItWorks from "@/components/sections/how-it-works";
+import Testimonials from "@/components/sections/testimonials";
+import FAQ from "@/components/sections/faq";
+import CTA from "@/components/sections/cta";
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="font-recursive text-center ">
-        <h1 className="text-2xl font-bold">Dashboard</h1>
-        <p className="mt-4">Welcome to your personalized dashboard!</p>
-        <Button className="mt-6">Get Started</Button>
-      </main>
+    <div>
+      <div className="grid-background" />
+      <HeroSection />
+      <Features />
+      <Testimonials />
+      <HowItWorks />
+      <FAQ />
+      <CTA />
     </div>
   );
 }

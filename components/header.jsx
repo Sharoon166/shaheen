@@ -6,11 +6,11 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 
 export default function Header() {
   return (
-    <header className="border-b bg-background/80">
+    <header className="border-b bg-background/50 backdrop-blur-sm z-[999]">
       <nav className="container mx-auto flex items-center justify-between py-2 px-6">
-        <Link href="/" className="flex items-center gap-2 font-semibold text-2xl">
+        <Link href="/" className="flex items-center gap-0.5 font-semibold text-2xl">
           <img
-            src="/logo1.png"
+            src="/logo.png"
             alt="Shaheen logo"
             className="h-12 w-auto object-contain"
           />
@@ -28,7 +28,7 @@ export default function Header() {
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="secondary">
+                <Button>
                   <StarsIcon className="h-4 w-4" />
                   <span className="max-md:hidden">Growth Tools</span>
                   <ChevronDown className="md:ml-2 h-4 w-4" />
