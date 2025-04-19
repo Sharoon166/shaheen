@@ -1,5 +1,3 @@
-import { Quote, QuoteIcon } from "lucide-react";
-
 const testimonials = [
   {
     quote:
@@ -28,7 +26,7 @@ const testimonials = [
 ];
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-background/60">
+    <section className="py-24 bg-gradient-to-b from-muted/10 to-muted/30">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-4">What People Say</h2>
         <p className="text-lg text-muted-foreground text-center mb-16">
@@ -39,7 +37,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, i) => (
             <div
               key={i}
-              className="p-8 rounded-2xl bg-card backdrop-blur-sm border border-accent max-w-lg mx-auto"
+              className="p-6 rounded-2xl bg-card backdrop-blur-sm border-2 max-w-lg mx-auto"
             >
               <div className="flex items-center gap-4 mb-6">
                 <img
@@ -57,7 +55,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="text-base text-muted-foreground italic">
-                "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
               </blockquote>
             </div>
           ))}

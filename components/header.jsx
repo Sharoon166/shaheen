@@ -3,8 +3,11 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { ChevronDown, FileText, GraduationCap, LayoutDashboardIcon, PenBox, StarsIcon } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { checkUser } from "@/lib/checkUser";
 
-export default function Header() {
+export default async function Header() {
+  await checkUser();
+
   return (
     <header className="border-b bg-background/50 backdrop-blur-sm z-[999]">
       <nav className="container mx-auto flex items-center justify-between py-2 px-6">

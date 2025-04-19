@@ -2,28 +2,24 @@ import { FileCheck, BrainCircuit, Target, TrendingUp } from "lucide-react";
 
 const features = [
   {
-    icon: <FileCheck className="w-6 h-6" />,
+    icon: <FileCheck className="w-10 h-10" />,
     title: "Resume Builder",
     description: "Build professional, ATS-friendly resumes effortlessly.",
-    themeColor: "#22C55E",
   },
   {
-    icon: <BrainCircuit className="w-6 h-6" />,
+    icon: <BrainCircuit className="w-10 h-10" />,
     title: "AI Interview Coach",
     description: "Enhance interview skills with AI-powered feedback.",
-    themeColor: "#3B82F6",
   },
   {
-    icon: <Target className="w-6 h-6" />,
+    icon: <Target className="w-10 h-10" />,
     title: "Career Planning",
     description: "Get personalized career path guidance for your profile.",
-    themeColor: "#EF4444",
   },
   {
-    icon: <TrendingUp className="w-6 h-6" />,
+    icon: <TrendingUp className="w-10 h-10" />,
     title: "Market Analytics",
     description: "Access real-time salary data and market insights.",
-    themeColor: "#F97316",
   }
 ];
 export default function Features() {
@@ -39,18 +35,18 @@ export default function Features() {
           {features.map((feature, i) => (
             <div
               key={i}
-              className="group transition-all duration-300 ease-in-out p-6 rounded-3xl bg-card shadow-xl border border-primary/30 backdrop-blur-sm max-w-lg mx-auto"
+              className="group transition-all duration-300 ease-in-out p-6 rounded-3xl bg-card shadow-xl border border-primary/30 backdrop-blur-sm max-w-lg mx-auto hover:scale-105 hover:bg-primary/5 hover:border-primary hover:shadow-2xl"
             >
               <div className="flex lg:flex-col items-center gap-4 w-full">
-                <div style={{ backgroundColor: feature.themeColor }} className="p-3 rounded-full shrink-0">
+                <div className="p-2 shrink-0 group-hover:text-primary group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
                 <div>
-                  <span className="text-sm text-primary/60 block">FEATURE</span>
-                  <h3 className="text-xl font-bold text-primary">
+                  <span className="text-sm text-primary/60 block group-hover:text-primary/80">FEATURE</span>
+                  <h3 className="text-xl font-bold text-primary group-hover:translate-x-1 transition-transform">
                     {feature.title}
                   </h3>
-                  <p className="mt-3 text-muted-foreground">
+                  <p className="mt-3 text-muted-foreground group-hover:text-foreground">
                     {feature.description}
                   </p>
                 </div>

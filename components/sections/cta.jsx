@@ -4,21 +4,22 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section className="relative py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-card z-0" />
+    <section className="relative py-24 overflow-hidden bg-gradient-to-b from-muted/10 to-muted/30">
       <div className="container relative z-10 mx-auto px-4 text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl text-balance font-bold mb-6">
             Your career deserves more than templates and guesswork
           </h2>
-          <p className="text-lg text-muted-foreground mb-10">
-            Let AI give you the edge. Let's get you hired.
+          <p className="md:text-lg text-muted-foreground text-balance mb-10">
+            Stand out from the crowd with personalized career strategies backed
+            by artificial intelligence
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button size="lg" asChild>
+          <div className="flex flex-col sm:flex-row gap-6 gap-y-3 justify-center items-center">
+            <Button size="lg" asChild className="group">
               <Link href="/onboarding">
-                Get Started Free <ArrowRight className="w-4 h-4 ml-2" />
+                Get Started Free{" "}
+                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-0.5 transition-transform" />
               </Link>
             </Button>
             <Button
@@ -27,7 +28,11 @@ export default function CTA() {
               asChild
               className="gap-2 hover:bg-primary/10 border-2"
             >
-              <a href="https://www.youtube.com/@RoadsideCoder" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.youtube.com/@RoadsideCoder"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <MessageCircle className="w-5 h-5" />
                 Talk to the Mentor
               </a>

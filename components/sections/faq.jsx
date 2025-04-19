@@ -58,7 +58,7 @@ export default function FAQ() {
                 value={`item-${i}`}
                 className="ring-0"
               >
-                <AccordionTrigger className="px-2 hover:bg-card cursor-pointer text-base">
+                <AccordionTrigger className="px-2 hover:bg-card cursor-pointer text-base decoration-transparent">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-muted-foreground text-base">

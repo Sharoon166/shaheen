@@ -23,7 +23,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 bg-gradient-to-b from-muted/10 to-muted/30">
+    <section className="py-24 bg-background/60 ">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-4 text-center">How It Works</h2>
         <p className="text-center text-muted-foreground mb-16 text-lg max-w-2xl mx-auto">
@@ -39,7 +39,10 @@ export default function HowItWorks() {
                 <div className="flex items-center gap-4">
                   <div
                     className="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold"
-                    style={{ backgroundColor: `${step.themeColor}20`, color: step.themeColor }}
+                    style={{
+                      backgroundColor: `${step.themeColor}20`,
+                      color: step.themeColor,
+                    }}
                   >
                     {i + 1}
                   </div>

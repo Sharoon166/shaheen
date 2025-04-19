@@ -11,8 +11,8 @@ export default function Home() {
       <div className="grid-background" />
       <HeroSection />
       <Features />
-      <Testimonials />
       <HowItWorks />
+      <Testimonials />
       <FAQ />
       <CTA />
     </div>
