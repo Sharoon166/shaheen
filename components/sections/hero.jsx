@@ -11,7 +11,7 @@ export default function Hero() {
             <Sparkles className="w-3.5 h-3.5 text-yellow-500 animate-pulse" />
             <span className="font-medium text-sm">Your AI Career Mentor</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-linear-180 from-neutral-300 to-zinc-600 bg-clip-text text-transparent text-balance">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 gradient-text text-balance">
             Land Your Dream Job with AI-Powered Career Guidance
           </h1>
 

@@ -9,7 +9,7 @@ export default async function Header() {
   await checkUser();
 
   return (
-    <header className="border-b bg-background/50 backdrop-blur-sm z-[999]">
+    <header className="border-b bg-background/50 backdrop-blur-sm z-40">
       <nav className="container mx-auto flex items-center justify-between py-2 px-6">
         <Link href="/" className="flex items-center gap-0.5 font-semibold text-2xl">
           <img
@@ -38,7 +38,7 @@ export default async function Header() {
                 </Button>
               </DropdownMenuTrigger>
 
-              <DropdownMenuContent align="end">
+              <DropdownMenuContent align="end" className="z-50 *:cursor-pointer">
                 <DropdownMenuItem asChild>
                   <Link href="/resume" className="flex items-center gap-2">
                     <FileText className="h-4 w-4" />
@@ -47,7 +47,7 @@ export default async function Header() {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link
-                    href="/ai-cover-letter"
+                    href="/cover-letter"
                     className="flex items-center gap-2"
                   >
                     <PenBox className="h-4 w-4" />
